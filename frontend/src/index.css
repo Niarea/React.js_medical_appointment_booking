@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Prata&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:wght@800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: Outfit;
+}
+
+.active hr{
+    @apply block
+}
+
+::-webkit-scrollbar{
+    @apply hidden
+}
+
+@media (max-width:740px) {
+    .active p {
+        @apply text-white bg-primary
+    }
+}
